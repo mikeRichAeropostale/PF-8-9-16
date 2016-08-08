@@ -1,0 +1,319 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PRINCE &amp; FOX</title>
+    <meta name="description" content="${2}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Maitree:400,300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+    	
+
+  var $jq = jQuery.noConflict();
+
+
+$jq(function(){ 
+
+	$jq("#hamburger").click(function() {
+		$jq(this).fadeOut( "slow" );
+		$jq("#pfNav").toggleClass( "active" );
+		$jq("#foxNav").fadeIn( "slow");
+       });
+	$jq("#foxNav").click(function() {
+		$jq(this).fadeOut( "slow" );
+		$jq("#pfNav").toggleClass( "active" );
+		$jq("#hamburger").fadeIn( "slow" );
+       });
+	$jq("#navLinks li").click(function() {
+		$jq("#foxNav").fadeOut( "slow");
+		$jq("#pfNav").toggleClass( "active" );
+		$jq("#hamburger").fadeIn( "slow" );
+       });
+    });
+    </script>
+
+<style>
+
+#pfWrap {
+	width: 100%;
+	min-height: 2000px;
+
+}
+#pfNav {
+	width: 100%;
+	height: 60px;
+/*	height: 200px;*/
+	border-bottom: 5px solid #FFDC00;
+	background-image: url("images/background-nav-full.jpg");
+	background-size: 100%;
+	overflow: hidden;
+	-webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+
+}
+.active {
+	width: 100%;
+/*	height: 60px;*/
+	height: 200px !IMPORTANT;
+	border-bottom: 5px solid #FFDC00;
+	background-image: url("images/background-nav-full.jpg");
+	background-size: 100%;
+	overflow: hidden;
+	-webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+
+}
+#hamburger {
+    width: 40px;
+    float: left;
+    display: block;
+    margin-top: 15px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+#foxNav {
+    width: 27px;
+    float: left;
+    display: none;
+    top: 13px;
+    left: 22px;
+    position: absolute;
+    cursor: pointer;
+}
+#shopBag {
+    width: 21px;
+    float: right;
+    display: block;
+    margin-top: 19px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#logo {
+    width: 244px;
+    position: absolute;
+    left: 50%;
+    margin-left: -122px;
+    margin-top: 23px;
+    cursor: pointer;
+
+}
+#navLinks {
+    width: 1080px;
+    height: 80px;
+    display: block;
+    margin-top: 92px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navLinks li {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Maitree', serif;
+    display: inline-block;
+    float: left;
+    width: 16%;
+    margin-right: 4%;
+    text-align: center;
+    line-height: 22px;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
+}
+.single {
+	margin-top: 12px;
+}
+.carotA {
+    position: absolute;
+    width: 7px;
+    height: 6px;
+    left: 50%;
+    top: 44px;
+    margin-left: -4px;
+    cursor: pointer;
+}
+.carotB {
+    position: absolute;
+    width: 7px;
+    height: 6px;
+    left: 50%;
+    top: 22px;
+    margin-left: -4px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1080px) {
+
+.active {
+    height: 395px !IMPORTANT;
+}
+#navLinks {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    margin-top: 79px;
+
+}
+
+#navLinks li {
+    width: 94%;
+    margin-bottom: 25px;
+    line-height: 32px;
+}
+.single {
+	margin-top: 0px;
+}
+.carotA {
+    position: relative;
+    width: 7px;
+    height: 6px;
+    left: 12px;
+    top: -2px;
+    margin-left: -4px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.carotB {
+    position: relative;
+    width: 7px;
+    height: 6px;
+    left:12px;
+    top: -2px;
+    margin-left: -4px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  
+}
+}	
+
+
+@media only screen and (max-width: 500px) {
+
+#hamburger {
+    width: 22px;
+    float: left;
+    display: block;
+    margin-top: 22px;
+    margin-left: 9px;
+}
+#foxNav {
+    width: 22px;
+    float: left;
+    display: none;
+    top: 15px;
+    left: 10px;
+    position: absolute;
+}
+#shopBag {
+    width: 17px;
+    float: right;
+    display: block;
+    margin-top: 22px;
+    margin-right: 9px;
+}
+#navLinks li {
+    width: 88%;
+}
+}
+
+@media only screen and (max-width: 360px) {
+
+#logo {
+    width: 208px;
+    margin-left: -104px;
+    margin-top: 25px;
+}
+.active {
+    height: 415px !IMPORTANT;
+}
+
+}
+
+    </style>
+
+
+</head>
+<body>
+
+<div id="pfWrap">
+
+<!-- NAVIGATION -->
+
+<div id="pfNav">
+
+<img id="hamburger" src="images/hamburger.png">
+<img id="foxNav" src="images/fox-nav.png">
+
+<img id="logo" src="images/pf-logo.png">
+
+<img id="shopBag" src="images/bag.png">
+
+<div id="navLinks">
+
+<ul>
+	<li>INTRODUCING PRINCE &amp; FOX <span class="carotA"><img src="images/carrot.png"></span></li>
+	<li class="single">SHOP P+F GIRLS<span class="carotB"><img src="images/carrot.png"></span></li>
+	<li class="single">SHOP P+F GUYS<span class="carotB"><img src="images/carrot.png"></span></li>
+	<li>FIND US ON SOCIAL MEDIA<span class="carotA"><img src="images/carrot.png"></span></li>
+	<li>SHOP WITH OUR OTHER PARTNERS<span class="carotA"><img src="images/carrot.png"></span></li>
+</ul>
+	
+
+</div>
+</div>
+
+
+<!-- NAVIGATION ENDS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+    
+
+
+
+
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+
+
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
